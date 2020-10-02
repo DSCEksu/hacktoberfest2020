@@ -1,0 +1,184 @@
+body{
+    margin:0;
+}
+
+.all-body{
+  overflow-y: auto;
+  width: 390px;
+  height: 100vh;
+}
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    margin: 0px;
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    background-color:#C70039;
+    z-index: 5;
+    align-items: center;
+    border:solid 2px #C70039;
+}
+.header p{
+    margin-left: 10%;
+    color:white;
+    font-size: 22px;
+    font-weight:bold;
+}
+#nav-toggle{
+    margin-right: 10px;
+    cursor: pointer;
+}
+#nav-toggle div{
+    width: 30px;
+    border: 1px solid white;
+    margin-bottom: 10px;
+}
+#header-options{
+    position: fixed;
+    top: 75px;
+    background: #C70039;
+    width: 100%;
+    z-index: 3;
+    font-size: 20px;
+    animation-fill-mode: forwards;
+}
+#header-options p{
+    color: white;
+    font-weight: normal;
+    margin-left: 10%;
+    cursor: pointer;
+}
+.open-nav{
+    animation-duration: 500ms;
+    animation-name:openNav;
+}
+@keyframes openNav{
+    0%{
+        transform:translateY(-100%);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
+.close-nav{
+    animation-duration: 500ms;
+    animation-name: closeNav;
+}
+@keyframes closeNav{
+    0%{
+        transform:translateY(0)
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+}
+        
+form {
+  width: 90%;
+  text-align: center;
+  margin: 70px auto 0;
+}
+
+form h1{
+    text-align: center;
+    background-color: #C70039;
+    color: white;
+    margin: 0px;
+}
+form input{
+    margin: 0 25px;
+    width: 250px;
+    height:40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+button {
+  width: 80px;
+  color: white;
+  height: 40px;
+  background-color: #C70039;
+  border: 2px solid #C70039;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.paragraph p{
+  display: inline-block;
+  margin: 0 10px;
+  margin-left: 2px;
+  font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.loader {
+  color: #C70039;
+  font-size: 20px;
+  margin: 100px auto;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-animation: load4 1.3s infinite linear;
+  animation: load4 1.3s infinite linear;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+@-webkit-keyframes load4 {
+  0%,
+  100% {
+    box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+  }
+  12.5% {
+    box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  25% {
+    box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  37.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  50% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  62.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+  }
+  75% {
+    box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+  }
+}
+@keyframes load4 {
+  0%,
+  100% {
+    box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+  }
+  12.5% {
+    box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  25% {
+    box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  37.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  50% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  62.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+  }
+  75% {
+    box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+  }
+}
