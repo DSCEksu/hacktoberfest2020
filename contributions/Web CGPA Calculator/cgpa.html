@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cgpa Calculator</title>
+    <link href="./CSS/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+  <div class="all-body">
+
+    <div id="loader" class="loader"></div>
+
+    <div class="header">
+        <p>CGPA Calculator</p>
+
+        <div id="nav-toggle">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+
+<div id="header-options" class="close-nav">
+  <p id="about"><a href="#about-section">About</a></p>
+  <p id="settings"><a href="#contact-section">Contact</a></p>
+</div>
+
+    <style>
+   
+    </style>
+    <form id="forms">
+       <h1>My CGPA Calculator</h1>
+       <br>
+       <br>
+       <input id="course" type="text" placeholder="Course Code">
+       <br>
+       <br> 
+       <input id="unit"type="number" placeholder="Unit">
+       <br>
+       <br>
+       <input id="score" type="text" placeholder="score"> 
+       <br>
+       <br>
+       <button onclick="receiveScoreValues(courseCode,courseUnit,courseScore)" id="enter-btn">Enter</button>
+    </form>
+    <br>
+    <div class="paragraph">
+  <p>S/N</p>
+    <p style="margin-left: -12px;">Course Code</p>
+     <p style="margin-left: -3px;">Unit</p>
+     <p style="margin-left:15px;">Score</p>
+     <p style="margin-left: 5px;">Grade</p>
+     <p>Points</p>
+  </div>
+   1.<input id="course1" type="text" placeholder="" style="width:60px;height:30px;margin-left:18px;">
+    <input id="unit1" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+    <input id="score1" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+    <input id="grade1" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+    <input id="points1" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+  2.<input id="course2" type="text" placeholder="" style="width:60px;height:30px;margin-left:18px">
+    <input id="unit2" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+    <input id="score2" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+    <input id="grade2" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+    <input id="points2" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+  3.<input id="course3" type="text" placeholder="" style="width:60px;height:30px;margin-left:18px">
+  <input id="unit3" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+  <input id="score3" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+  <input id="grade3" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+  <input id="points3" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+  4.<input id="course4" type="text" placeholder="" style="width:60px;height:30px;margin-left:18px">
+    <input id="unit4" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+    <input id="score4" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+    <input id="grade4" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+    <input id="points4" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+  5.<input id="course5" type="text" placeholder="" style="width:60px;height:30px;margin-left:18px">
+    <input id="unit5" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+    <input id="score5" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+    <input id="grade5" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+    <input id="points5" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;"> 
+  6.<input id="course6" type="text" placeholder="" style="width:60px;height:30px;margin-left:18px">
+    <input id="unit6" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+    <input id="score6" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+    <input id="grade6" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+    <input id="points6" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;"> 
+  7.<input id="course7" type="text" placeholder="" style="width:60px;height:30px;margin-left:18px">
+    <input id="unit7" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+    <input id="score7" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+    <input id="grade7" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+    <input id="points7" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;"> 
+  8.<input id="course8" type="text" placeholder="" style="width:60px;height:30px;margin-left:18px">
+    <input id="unit8" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+    <input id="score8" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+    <input id="grade8" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+    <input id="points8" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;"> 
+  9.<input id="course9" type="text" placeholder="" style="width:60px;height:30px;margin-left:18px">
+    <input id="unit9" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+    <input id="score9" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+    <input id="grade9" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+    <input id="points9" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">   
+ 10.<input id="course10" type="text" placeholder="" style="width:60px;height:30px;margin-left:10px">
+    <input id="unit10" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+    <input id="score10" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+    <input id="grade10" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+    <input id="points10" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">   
+ 11.<input id="course11" type="text" placeholder="" style="width:60px;height:30px;margin-left:10px">
+    <input id="unit11" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+    <input id="score11" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+    <input id="grade11" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+    <input id="points11" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+ 12.<input id="course12" type="text" placeholder="" style="width:60px;height:30px;margin-left:10px">
+    <input id="unit12" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+    <input id="score12" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+    <input id="grade12" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+    <input id="points12" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+ 13.<input id="course13" type="text" placeholder="" style="width:60px;height:30px;margin-left:10px">
+    <input id="unit13" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+    <input id="score13" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+    <input id="grade13" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+    <input id="points13" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">  
+ 14.<input id="course14" type="text" placeholder="" style="width:60px;height:30px;margin-left:10px">
+    <input id="unit14" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+    <input id="score14" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+    <input id="grade14" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+    <input id="points14" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+ 15.<input id="course15" type="text" placeholder="" style="width:60px;height:30px;margin-left:10px">
+    <input id="unit15" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+    <input id="score15" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+    <input id="grade15" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">
+    <input id="points15" type="text" placeholder="" style="width:60px;height:30px;margin-left: -5px;">   
+    <br>
+   
+    <button style="margin: 0 30px;margin-top: 10px;">Calculate CGPA</button> 
+    <input id="calculate" type="text" placeholder="" style="height:30px;margin-top: 10px;">
+<div id="about-section">
+  <p style="font-weight: bold;color: black;">This CGPA Calculator is built on 5.0 CGPA Scale.</p>
+</div>   
+<div id="contact-section">
+  <p style="font-weight: bold;color: black;">You can contact us through this phone number: +234(0)8142270554</p>
+</div>  
+    <script src="./JS/cgp calculator.js"></script>
+</body>
+</html>
