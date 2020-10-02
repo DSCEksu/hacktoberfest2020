@@ -11,7 +11,6 @@ Add them to this list so others can find it too and start contributing.
 1. [DSCEksu/hacktoberfest2020](https://github.com/DSCEksu/hacktoberfest2020)
 2. [aekiti/hacktoberfest2020](https://github.com/aekiti/hacktoberfest2020)
 3. [emmanuelJet/hfado-doc](https://github.com/emmanuelJet/hfado-doc)
-4. 
 
 ## Submitting a pull request
 > Tips: Make sure that you are submitting and committing things that are of quality substance, otherwise maintainers can invalidate your pull request. Check the full [contribution guidelines](https://aekiti.github.io/hacktoberfest2020/guildlines/dsceksu/) for more information.
